@@ -187,7 +187,7 @@ button a{
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: cn;
+    justify-content: center;
     align-self: flex-start;
     flex-grow: 1;
     padding: 5px;
