@@ -33,13 +33,38 @@
 # facebook  : https://fb.me/i.sirait93
 # instagram : https://www.instagram.com/i.sirait93	
 ################################################
------------------------------------------------ */  
+----------------------------------------------- */
+
+html{
+    scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none; 
+  background-color: #040532;
+  color: white; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 50px 50px 5px 5px;
+  font-size: 15px;
+}
+
+#myBtn:hover {
+  background-color: #ffc857;
+}
 </style>
 <body>
 <div class="container">
     <div class="mode">
         <i class="fa fa-sun-o" id="icon"></i>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
     <div class="main">
         <header>
             <h1><a href="https://isirait93.github.io"><b>/isirait93.</b>Github.io</a> <img style="width: 100px;" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fisirait93.github.io&count_bg=%23040532&title_bg=%23FF9F4D&icon=github.svg&icon_color=%23FFFFFF&title=Visit&edge_flat=false" alt="hits" /></h1>
@@ -123,6 +148,23 @@
             }else{
                 icon.className = ("fa fa-sun-o");
             }
+    }
+</script>
+
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
 </script>
 </body>
