@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menambah Menu Navigasi - by Isirait93</title>
+    <link rel="icon" href="icons.ico" type="image/gif" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Free Template Hotspot - by Isirait93">
+    <meta name="description" content="Free Template Hotspot For Mikrotik RT/RW Net Responsive Login Page Theme">
+    <meta name="keywords" content="Template Hotspot, Responsive Template, Login Page Mikrotik, Mikrotik Theme, Template Voucher Hotspot, Free Template Hotspot, Template Hotspot Ringan, Login Page Ringan">
+    <meta content='index, follow, noodp' name='robots'/>
+    <meta name="google-site-verification" content="tz2k0cWIyrcQ_S5krh0enSbncX6ouV6B3g49oEOb1Tc" />
+    <meta name="language" content="English">
+    <meta name="author" content="Ilhamuddin Sirait">
+    <meta property="og:title" content="Free Template Hotspot - by Isirait93">
+    <meta property="og:description" content="Free Template Hotspot For Mikrotik RT/RW Net Responsive Login Page Theme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isirait93.github.io">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<style>
+    /* --------------------------------------------
+################################################
+# Free Template Hotspot by. isirait93.github.io
+# Date/Time : 22/8/2021, 12:10:14 AM
+# Designer  : Ilhamuddin Sirait / isirait93
+# Site      : http://isirait93.my.id
+# facebook  : https://fb.me/i.sirait93
+# instagram : https://www.instagram.com/i.sirait93	
+################################################
+----------------------------------------------- */
+
+html{
+    scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none; 
+  background-color: #040532;
+  color: white; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 50px 50px 5px 5px;
+  font-size: 15px;
+}
+
+#myBtn:hover {
+  background-color: #ffc857;
+}
+</style>
+<body>
+<div class="container">
+    <div class="mode">
+        <i class="fa fa-sun-o" id="icon"></i>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    <div class="main">
+        <!-- ================================================================== -->
+        <header>
+            <h1><a href="https://isirait93.github.io"><b>/isirait93.</b>Github.io</a> <img style="width: 100px;" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fisirait93.github.io&count_bg=%23040532&title_bg=%23FF9F4D&icon=github.svg&icon_color=%23FFFFFF&title=Visit&edge_flat=false" alt="hits" /></h1>
+        </header>
+        <!-- ================================================================== -->
+        <div class="content">
+            <h3>CARA MENAMBAH MENU NAVIGASI DI TEMPLATE HOTSPOT</h3>
+            <div class="post">
+                <p>Menu navigasi merupakan element penting di template hotspot, penggunaan menu navigasi ini tentunya dapat mempermudah pelanggan hotspot untuk menemukan fitur - fitur yang tersedia di jaringan hotspot kita.
+                <br>
+                <br>
+                Buat kamu ingin menggunakan menu navigasi di tampilan hotspot, kamu bisa ikuti step by step di bawah ini :
+                <br>
+                Sebelum kamu melakukan edit tampilan hotspot, siapkan terlebih dahulu tools nya agar lebih mudah untuk mengedit code tampilan hotspot kamu.
+                <ul>Tools yang harus kamu siapkan :
+                    <li><b>Code Editors</b> : Kamu bisa gunakan <a href="/#editor-tools">Sublime Text</a> | <a href="/#editor-tools">Notepad++</a> | <a href="/#editor-tools">MS VSCode</a> Atau code editor yang biasa kamu gunakan, Tools ini akan digunakan sebagai aplikasi mengedit code di dalam file HTML/CSS tampilan hotspot kamu.</li>
+                    <li><b>FTP Tools</b> : Ftp tools ini digunakan untuk melakukan remote files ke mikrotik kamu dengan mudah. kamu bisa gunakan <a href="/#ftp-tools">WinSCP</a> | <a href="/#ftp-tools">FileZilla</a> ataupun kamu juga bisa menggunakan aplikasi bawaan mikrotik yaitu <a href="/#ftp-tools">Winbox</a> dengan metode drag and drop file ke winbox</li>
+                </ul>
+                <ul>Download File Font Awesome :
+                    <li>Style CSS Font Awesome - <a href="/css/font-awesome.min.css">font-awesome.min.css</a></li>
+                    <li>Font Awesome 1 <a href="/fonts/fontawesome-webfont.woff">fontawesome-webfont.woff</a></li>
+                    <li>Font Awesome 2 <a href="/fonts/fontawesome-webfont.woff2">fontawesome-webfont.woff2</a></li>
+                </ul>
+                <br>
+                Setelah file Font Awesome diatas terdownload, buat folder baru di dalam folder hotspot kamu, lalu beri nama "css" dan "fonts", tempatkan <b>fontawesome-webfont.woff dan fontawesome-webfont.woff2</b> kedalam folder <b>"fonts"</b>, dan file <b>"font-awesome.min.css"</b> ke dalam folder <b>"css"</b>.
+                </p>
+                <br>
+                <h4>Download File Template Hotspot dari Mikrotik Kamu</h4>
+                <p>Untuk mendownload file tampilan hotspot dari Mikrotik kamu, silahkan buka aplikasi Winbox yang telah kamu download tadi sebelumnya.
+                <br>
+                <ul>Buka Winbox
+                    <li>Isikan IP Mikrotik</li>
+                    <li>Login dan Password</li>
+                    <li>Klik tombol Connect</li>
+                    <li>Buka menu File</li>
+                    <li>Pada bagian sebelah kanan cari nama folder tampilan hotspot kamu misal "hotspot"</li>
+                    <li>Tarik Folder "hotspot" tersebut ke komputer kamu bisa dimana saja, untuk lebih mudah silahkan tarik saja ke Desktop</li>
+
+                </ul>
+                <br>
+                <img src="post/img-nav-1.png" alt="Menambahkan Menu Navigasi di Tampilan Hotspot">
+                <br>
+                <br>
+                <img src="post/img-nav-2.png" alt="Menambahkan Menu Navigasi di Tampilan Hotspot">
+                </p>
+                <br>
+                <br>
+                <p>Buka File <b>Login.html</b> cari kode <code><b>&lt;/head&gt;</b></code> lalu paste kode dibawah ini tepat diatas kode <code><b>&lt;/head&gt;</b></code> </p>
+                <pre class='code code-html'><label>HTML</label><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.min.css&quot;&gt;</code></pre>
+                <p>Buka file <b>login.html</b> menggunakan code editor lalu cari bagian tag HTML <code><b>&lt;body&gt;</b></code> dan Copy Paste Code dibawah ini persis dibawah tag <code><b>&lt;body&gt;</b></code></p>
+<pre class='code code-html'><label>HTML</label><code>&lt;nav&gt;
+    &lt;button onclick=&quot;window.location = &#039;login.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-home c1&quot;&gt;&lt;/i&gt; Home&lt;/button&gt;
+    &lt;button onclick=&quot;window.location = &#039;paket.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-dollar c2&quot;&gt;&lt;/i&gt; Paket&lt;/button&gt;
+    &lt;button onclick=&quot;window.location = &#039;bantuan.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-info-circle c3&quot;&gt;&lt;/i&gt; Bantuan&lt;/button&gt;
+    &lt;button onclick=&quot;window.location = &#039;contact.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-comments-o c4&quot;&gt;&lt;/i&gt; Contact&lt;/button&gt;
+&lt;/nav&gt;</code></pre>
+        <p>Buka file CSS tampilan hotspot kalian, biasanya ada di dalam folder CSS sebagai contoh "style.css", sesuaikan dengan keadaan file kamu.</p>
+<pre class='code code-css'><label>CSS</label><code>
+     ---- tambahkan kode ini dibawah body -----
+    body{
+        position:relative;
+    }
+    
+    nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  nav button {
+    width: 25%;
+    height: 50px;
+    background-color: #dadada;
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  nav button .fa {
+    display: block;
+    font-size: 20px;
+  }
+  
+  nav button:hover {
+    background-color: #040533;
+    color: #fff;
+  }</code></pre>
+  <p>Hasilnya akan seperti ini</p>
+  <img style="width:100% !important;" src="post/img-nav-3.png" alt="" >
+            </div>
+        </div>
+        <!-- ================================================================== -->
+        <footer>
+            <p>&copy; Copyright - Free Template Hotspot Responsive by <a href="https://isirait93.github.io"> Isirait93</a></p>
+            <p>Jangan Lupa Follow <a href="https://www.instagram.com/i.sirait93">Instagram</a> | <a href="https://www.youtube.com/ilhamuddinsiraittutorial">Youtube Channel</a> | Creator by <a href="https://www.facebook.com/i.sirait93">Ilhamuddin Sirait</a></p>
+        </footer>
+        <!-- ================================================================== -->
+    </div>
+</div>
+
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.className = ("fa fa-moon-o");
+            }else{
+                icon.className = ("fa fa-sun-o");
+            }
+    }
+</script>
+
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>
