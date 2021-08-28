@@ -19,6 +19,8 @@
     <meta property="og:url" content="https://isirait93.github.io">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 </head>
 <style>
     /* --------------------------------------------
@@ -65,7 +67,7 @@ html{
     <div class="main">
         <!-- ================================================================== -->
         <header>
-            <h1><a href="https://isirait93.github.io"><b>/isirait93.</b>Github.io</a> <img style="width: 100px;" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fisirait93.github.io&count_bg=%23040532&title_bg=%23FF9F4D&icon=github.svg&icon_color=%23FFFFFF&title=Visit&edge_flat=false" alt="hits" /></h1>
+            <h1><a href="/"><b>/isirait93.</b>Github.io</a> <img style="width: 100px;" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fisirait93.github.io&count_bg=%23040532&title_bg=%23FF9F4D&icon=github.svg&icon_color=%23FFFFFF&title=Visit&edge_flat=false" alt="hits" /></h1>
         </header>
         <!-- ================================================================== -->
         <div class="content">
@@ -110,18 +112,24 @@ html{
                 </p>
                 <br>
                 <br>
-                <p>Buka File <b>Login.html</b> cari kode <code><b>&lt;/head&gt;</b></code> lalu paste kode dibawah ini tepat diatas kode <code><b>&lt;/head&gt;</b></code> </p>
-                <pre class='code code-html'><label>HTML</label><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.min.css&quot;&gt;</code></pre>
-                <p>Buka file <b>login.html</b> menggunakan code editor lalu cari bagian tag HTML <code><b>&lt;body&gt;</b></code> dan Copy Paste Code dibawah ini persis dibawah tag <code><b>&lt;body&gt;</b></code></p>
-<pre class='code code-html'><label>HTML</label><code>&lt;nav&gt;
+                <p>Buka File <b>login.html</b> cari kode <code><b>&lt;/head&gt;</b></code> lalu paste kode dibawah ini tepat diatas kode <code><b>&lt;/head&gt;</b></code> </p>
+                
+                
+                
+<pre title="HTML" data-codetype ="HTMLku"><code class="language-markup htmlk">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.min.css&quot;&gt;</code></pre>
+
+<p>Buka file <b>login.html</b> menggunakan code editor lalu cari bagian tag HTML <code><b>&lt;body&gt;</b></code> dan Copy Paste Code dibawah ini persis dibawah tag <code><b>&lt;body&gt;</b></code></p>
+
+<pre title="HTML" data-codetype ="HTMLku"><code class="language-markup htmlk">&lt;nav&gt;
     &lt;button onclick=&quot;window.location = &#039;login.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-home c1&quot;&gt;&lt;/i&gt; Home&lt;/button&gt;
     &lt;button onclick=&quot;window.location = &#039;paket.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-dollar c2&quot;&gt;&lt;/i&gt; Paket&lt;/button&gt;
     &lt;button onclick=&quot;window.location = &#039;bantuan.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-info-circle c3&quot;&gt;&lt;/i&gt; Bantuan&lt;/button&gt;
     &lt;button onclick=&quot;window.location = &#039;contact.html&#039;;&quot;&gt;&lt;i class=&quot;fa fa-comments-o c4&quot;&gt;&lt;/i&gt; Contact&lt;/button&gt;
 &lt;/nav&gt;</code></pre>
-        <p>Buka file CSS tampilan hotspot kalian, biasanya ada di dalam folder CSS sebagai contoh "style.css", sesuaikan dengan keadaan file kamu.</p>
-<pre class='code code-css'><label>CSS</label><code>
-     ---- tambahkan kode ini dibawah body -----
+
+<p>Buka file CSS tampilan hotspot kalian, biasanya ada di dalam folder CSS sebagai contoh "style.css", sesuaikan dengan keadaan file kamu.</p>
+
+<pre title="CSS" data-codetype ="CSSku"><code class="language-css css">---- tambahkan kode ini dibawah body -----
     body{
         position:relative;
     }
@@ -165,8 +173,10 @@ html{
     background-color: #040533;
     color: #fff;
   }</code></pre>
+
   <p>Hasilnya akan seperti ini</p>
   <img style="width:100% !important;" src="post/img-nav-3.png" alt="" >
+
             </div>
         </div>
         <!-- ================================================================== -->
@@ -178,33 +188,6 @@ html{
     </div>
 </div>
 
-<script>
-    var icon = document.getElementById("icon");
-    icon.onclick = function(){
-            document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
-                icon.className = ("fa fa-moon-o");
-            }else{
-                icon.className = ("fa fa-sun-o");
-            }
-    }
-</script>
-
-<script>
-    var mybutton = document.getElementById("myBtn");
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
