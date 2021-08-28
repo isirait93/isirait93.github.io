@@ -5,11 +5,11 @@
 }
 
 h1, h2 {font-size: 25px; border-bottom:0px solid #ddd; margin-bottom:20px; color:var(--secondary-color);line-height:1.5}
-h3, h4, h5, h6{font-size: 20px; border-bottom:1px solid #ddd; margin-bottom:10px; padding-bottom:10px; color:var(--secondary-color);line-height:1.5}
+h3, h4, h5, h6{font-size: 20px; border-bottom:1px solid #ddd; margin-bottom:10px; padding-bottom:10px; color:var(--third-color);line-height:1.5}
 
 /* unvisited link */
 a:link {
-    color: #ff9f4d;
+    color: #00ac48;
     text-decoration:none;
   }
   /* visited link */
@@ -19,7 +19,7 @@ a:link {
   }
   /* mouse over link */
   a:hover {
-    color: rgb(85, 0, 119);
+    color: #550077;
   }
 
 body{
@@ -27,7 +27,7 @@ body{
     color: var(--secondary-color);
     font-size: 16px;
     word-wrap: break-word;
-    background: linear-gradient(-45deg, #ff9f4d 40%, #ffc857 0, #ffc857 70%, #ff9f4d 0, #ff9f4d 100%);
+    background:var(--fourth-color);
 }
 .container {
     width: 100%;
@@ -82,7 +82,7 @@ header{
         padding:0;
         margin:5px 5px 0 17px;
         display: list-item;
-        list-style: square;
+        list-style:square;
     }
 }
 .post{
@@ -238,10 +238,14 @@ footer{
 :root{
   --primary-color:#edf2fc;
   --secondary-color:#212121;
+  --third-color:#4c0063;
+  --fourth-color:linear-gradient(-45deg, #040532 40%, #ffc857 0, #ffc857 90%, #040532 0, #040532 100%);
 }
 .dark-theme{
   --primary-color:#040532;
   --secondary-color:#fff;
+  --third-color:#d47f00;
+  --fourth-color:linear-gradient(-45deg, #ff9f4d 40%, #040532 0,#040532 90%, #ff9f4d 0, #ff9f4d 100%);
 }
 
 /* Prism Syntax Highlighter */
