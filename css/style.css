@@ -288,7 +288,7 @@ footer p {
 :root {
   --primary-color:#edf2fc;
   --secondary-color:#212121;
-  --third-color:#4c0063;
+  --third-color:#003cff;
   --fourth-color:linear-gradient(-45deg, #040532 40%, #ffc857 0, #ffc857 90%, #040532 0, #040532 100%);
 }
 
@@ -563,6 +563,30 @@ pre[data-codetype='JQueryku']:before {
 
 .jq {
   color: #e5b460;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #040532;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px 50px 5px 5px;
+  font-size: 15px;
+}
+
+#myBtn:hover {
+  background-color: #ffc857;
 }
 
 @media only screen and (max-width: 600px) {
